@@ -137,4 +137,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/TopDownEngine/ThirdParty/MoreMountains/MMTools/Demos/MMSceneLoading/MMSceneLoadingDemoSceneB.unity
     guid: 352d34cac2435634fb99618d19a3929c
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Home.unity
+    guid: dc90e0c67918c654e89eb6c2f99ae012
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Nivel1.unity
+    guid: 9db9cea3beaa72a41aa084e2b13d9714
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Nivel2.unity
+    guid: 022b176e29b972b4cae4f7d694852a9f
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Nivel3.unity
+    guid: f7ee52f11fcd15a478ca9e3781a315e4
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Creditos.unity
+    guid: 81cd4f69a9cd5ec499d404915f981376
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Gano.unity
+    guid: 0fb6fa516f4607a418037ec407c5c59e
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Instrucciones.unity
+    guid: c93acea5e1eb80b49bce1a967d6b0d03
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Perdio.unity
+    guid: 7a3525b460d62a447b96d647c97c401c
   m_configObjects: {}
