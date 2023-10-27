@@ -2650,17 +2650,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-  - tiempoSalida: 30
+  - tiempoSalida: 45
     cantidad: 4
     prefab: {fileID: 2248073977301352198, guid: 64c4fed090d643d43b2ffc6308bb2450,
       type: 3}
     ruta: {fileID: 472071850}
-  - tiempoSalida: 30
+  - tiempoSalida: 45
     cantidad: 2
     prefab: {fileID: 2248073977301352198, guid: acdb1d55550cecc4295e30cea6cd389a,
       type: 3}
     ruta: {fileID: 472071850}
-  - tiempoSalida: 30
+  - tiempoSalida: 45
     cantidad: 4
     prefab: {fileID: 2248073977301352198, guid: 0e18dfd91c89f6c42a99c8aef28c7e3d,
       type: 3}
@@ -14874,17 +14874,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-  - tiempoSalida: 30
+  - tiempoSalida: 60
     cantidad: 5
     prefab: {fileID: 2248073977301352198, guid: 64c4fed090d643d43b2ffc6308bb2450,
       type: 3}
     ruta: {fileID: 472071850}
-  - tiempoSalida: 30
+  - tiempoSalida: 60
     cantidad: 4
     prefab: {fileID: 2248073977301352198, guid: acdb1d55550cecc4295e30cea6cd389a,
       type: 3}
     ruta: {fileID: 472071850}
-  - tiempoSalida: 30
+  - tiempoSalida: 60
     cantidad: 3
     prefab: {fileID: 2248073977301352198, guid: 091a6e80796fe184da14093f6fe98354,
       type: 3}
