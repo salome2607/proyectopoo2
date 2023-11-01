@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Tools;
 
 public class Oleadas : MonoBehaviour
 {
@@ -11,7 +12,12 @@ public class Oleadas : MonoBehaviour
     private GameObject contenedor_grupos;
     public static Oleadas Instance { get; private set; }
     public GameObject ContenedorGrupos { get => contenedor_grupos; set => contenedor_grupos = value; }
+    public int OlaActual { get => ola_actual; set => ola_actual = value; } 
 
+    public int CantidadOlas()
+    {
+        return olas.Count;
+    }
 
     private void Awake() 
     { 
@@ -27,19 +33,21 @@ public class Oleadas : MonoBehaviour
         } 
     }
 
-    public void Start(){
+    public void Start()
+    {
         DespacharOla();
     }
 
     public void DespacharOla(){
         Ola ola;
-        if(ola_actual < olas.Count)
+        if(OlaActual < olas.Count)
         {
-            ola = olas[ola_actual];
+            ola = olas[OlaActual];
             ola.EmpezarOla();
             ola.OleadasNivel = this;
-            ola_actual++; //Acá se acualiza el contador de olas
+            OlaActual++; //Acá se acualiza el contador de olas
             Debug.Log("Ola "+ola_actual+"/"+olas.Count);
+            MMGameEvent.Trigger("NuevaOla");
         }
         else{
             //Se termina la partida indicar que gano y mostrar ventana fin de nivel
