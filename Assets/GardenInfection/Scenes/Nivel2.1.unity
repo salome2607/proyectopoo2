@@ -1764,6 +1764,7 @@ GameObject:
   - component: {fileID: 261433442}
   - component: {fileID: 261433444}
   - component: {fileID: 261433443}
+  - component: {fileID: 261433445}
   m_Layer: 0
   m_Name: corazones
   m_TagString: Untagged
@@ -1830,6 +1831,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261433441}
   m_CullTransparentMesh: 1
+--- !u!114 &261433445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261433441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e67178ee4220d45998a68939692391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contador: {fileID: 2022180545}
 --- !u!4 &267925521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4798570233257244, guid: 581ea2e7a3383fa4eac2d162354979b5,
@@ -5698,7 +5712,7 @@ MonoBehaviour:
   Label: 
   TargetHandleWeaponAbility: {fileID: 0}
   AimOrigin: 0
-  FaceTarget: 0
+  FaceTarget: 1
   AimAtTarget: 1
   OnlyAimWhenInState: 0
 --- !u!114 &818771269
@@ -7037,6 +7051,58 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1353330084}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &964276243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964276244}
+  - component: {fileID: 964276245}
+  m_Layer: 0
+  m_Name: Jefe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &964276244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964276243}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1097884434}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &964276245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964276243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6937778ea1a0b6c4e9a69c15635c0dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - tiempoSalida: 75
+    cantidad: 5
+    prefab: {fileID: 2248073977301352198, guid: 49ecbabd8b2e41d4ca6541205f7d9402,
+      type: 3}
+    ruta: {fileID: 472071850}
+  tiempo_entre_olas: 0
+  PuedeAgregarButton: 0
 --- !u!4 &965939440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4798570233257244, guid: 581ea2e7a3383fa4eac2d162354979b5,
@@ -7697,6 +7763,7 @@ Transform:
   - {fileID: 357503829}
   - {fileID: 425580217}
   - {fileID: 1973377496}
+  - {fileID: 964276244}
   - {fileID: 1348233201}
   m_Father: {fileID: 71771402}
   m_RootOrder: 5
@@ -7781,8 +7848,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1998343457
-  m_SortingLayer: 2
+  m_SortingLayerID: 47421343
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0cea8a4900cd98445b4de43d35cd0876, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8535,7 +8602,7 @@ MonoBehaviour:
   Label: 
   TargetHandleWeaponAbility: {fileID: 0}
   AimOrigin: 0
-  FaceTarget: 0
+  FaceTarget: 1
   AimAtTarget: 1
   OnlyAimWhenInState: 0
 --- !u!114 &1229952128
@@ -11890,7 +11957,7 @@ MonoBehaviour:
   Label: 
   TargetHandleWeaponAbility: {fileID: 0}
   AimOrigin: 0
-  FaceTarget: 0
+  FaceTarget: 1
   AimAtTarget: 1
   OnlyAimWhenInState: 0
 --- !u!114 &1331380149
@@ -12335,7 +12402,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1097884434}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1353330084
 PrefabInstance:
@@ -13566,8 +13633,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1998343457
-  m_SortingLayer: 2
+  m_SortingLayerID: 47421343
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0309310a529dcc140aecb73bfca2e79f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15555,8 +15622,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1998343457
-  m_SortingLayer: 2
+  m_SortingLayerID: 47421343
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1ec3fe0ea41c39844aa810fa39e46cf6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15954,8 +16021,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1998343457
-  m_SortingLayer: 2
+  m_SortingLayerID: 47421343
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fbc92c92f7a575f4ca0a2c938acc1d64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -28607,7 +28674,7 @@ MonoBehaviour:
   Label: 
   TargetHandleWeaponAbility: {fileID: 0}
   AimOrigin: 0
-  FaceTarget: 0
+  FaceTarget: 1
   AimAtTarget: 1
   OnlyAimWhenInState: 0
 --- !u!114 &2104464914

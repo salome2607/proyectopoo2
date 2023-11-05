@@ -5952,6 +5952,7 @@ GameObject:
   - component: {fileID: 574687009}
   - component: {fileID: 574687011}
   - component: {fileID: 574687010}
+  - component: {fileID: 574687012}
   m_Layer: 0
   m_Name: 'corazones '
   m_TagString: Untagged
@@ -6018,6 +6019,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574687008}
   m_CullTransparentMesh: 1
+--- !u!114 &574687012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574687008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e67178ee4220d45998a68939692391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contador: {fileID: 485711873}
 --- !u!1001 &577517504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14193,6 +14207,58 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1803099027}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1433276997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433276998}
+  - component: {fileID: 1433276999}
+  m_Layer: 0
+  m_Name: Jefe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1433276998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433276997}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1694539727}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1433276999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433276997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6937778ea1a0b6c4e9a69c15635c0dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - tiempoSalida: 105
+    cantidad: 4
+    prefab: {fileID: 2248073977301352198, guid: 2e316843899505b4dbaaa65bd529e5b9,
+      type: 3}
+    ruta: {fileID: 906115196}
+  tiempo_entre_olas: 0
+  PuedeAgregarButton: 0
 --- !u!1001 &1435468832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14746,7 +14812,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1694539727}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1503255785 stripped
 Transform:
@@ -15642,6 +15708,7 @@ Transform:
   - {fileID: 871955232}
   - {fileID: 938567046}
   - {fileID: 1966785426}
+  - {fileID: 1433276998}
   - {fileID: 1503185351}
   m_Father: {fileID: 71771402}
   m_RootOrder: 5
