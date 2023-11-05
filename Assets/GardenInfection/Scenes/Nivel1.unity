@@ -16224,7 +16224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 427222508}
   - component: {fileID: 427222507}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: nutritious-fertilizer-tower-in-pixel-art-that-can-be-used-for-sprites-TtG1j86peZ-removebg-preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16323,7 +16323,7 @@ GameObject:
   - component: {fileID: 429123505}
   - component: {fileID: 429123504}
   - component: {fileID: 429123503}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: torre-abononutritivo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16368,7 +16368,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -16846,6 +16846,7 @@ GameObject:
   - component: {fileID: 433993499}
   - component: {fileID: 433993501}
   - component: {fileID: 433993500}
+  - component: {fileID: 433993502}
   m_Layer: 0
   m_Name: Corazones
   m_TagString: Untagged
@@ -16964,6 +16965,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433993497}
   m_CullTransparentMesh: 1
+--- !u!114 &433993502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433993497}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e67178ee4220d45998a68939692391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contador: {fileID: 870260595}
 --- !u!1001 &436520902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17419,7 +17433,7 @@ GameObject:
   - component: {fileID: 528095425}
   - component: {fileID: 528095424}
   - component: {fileID: 528095423}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: torre-abononutritivo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17464,7 +17478,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -17526,7 +17540,7 @@ MonoBehaviour:
   Label: 
   TargetHandleWeaponAbility: {fileID: 0}
   AimOrigin: 0
-  FaceTarget: 0
+  FaceTarget: 1
   AimAtTarget: 1
   OnlyAimWhenInState: 0
 --- !u!114 &528095426
@@ -19070,7 +19084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 665584329}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19085,7 +19099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665584328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -0.6, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19315,7 +19329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710161410}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19330,7 +19344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710161409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -0.9, y: -1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19630,6 +19644,7 @@ Transform:
   - {fileID: 1475896873}
   - {fileID: 765530893}
   - {fileID: 329224157}
+  - {fileID: 1824104740}
   - {fileID: 1600612258}
   m_Father: {fileID: 71771402}
   m_RootOrder: 5
@@ -19650,6 +19665,7 @@ MonoBehaviour:
   - {fileID: 1475896874}
   - {fileID: 765530894}
   - {fileID: 329224158}
+  - {fileID: 1824104741}
   contenedor_grupos: {fileID: 1600612257}
 --- !u!1001 &749604897
 PrefabInstance:
@@ -21231,7 +21247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 982148691}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21246,7 +21262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982148690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -1.4, y: -0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21731,7 +21747,7 @@ GameObject:
   - component: {fileID: 1031458157}
   - component: {fileID: 1031458156}
   - component: {fileID: 1031458155}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: torre-espantapajaros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21776,7 +21792,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -23696,7 +23712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1312204357}
   - component: {fileID: 1312204356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: magic-fertilizer-tower-in-pixel-art-that-can-be-used-for-sprites-in-a-kfXuaeMQ5q-watermarked-removebg-preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24943,7 +24959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1379141221}
   - component: {fileID: 1379141220}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25200,7 +25216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1420532057}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25215,7 +25231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420532056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -1.4, y: -1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25632,7 +25648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1483228315}
   - component: {fileID: 1483228316}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25716,7 +25732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485300697}
   - component: {fileID: 1485300698}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: nutritious-fertilizer-tower-in-pixel-art-that-can-be-used-for-sprites-TtG1j86peZ-removebg-preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26422,7 +26438,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 746188741}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1611048998 stripped
 Transform:
@@ -26730,7 +26746,7 @@ GameObject:
   - component: {fileID: 1651301306}
   - component: {fileID: 1651301305}
   - component: {fileID: 1651301304}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: torre-sol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26775,7 +26791,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -27373,7 +27389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704897576}
   - component: {fileID: 1704897575}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: scarecrow-tower-in-pixel-art-that-can-be-used-for-sprites-in-a-game-5SzBErJxY--removebg-preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27812,7 +27828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1777722953}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27827,7 +27843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777722952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -0.9, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28149,6 +28165,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581ea2e7a3383fa4eac2d162354979b5, type: 3}
+--- !u!1 &1824104739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1824104740}
+  - component: {fileID: 1824104741}
+  m_Layer: 0
+  m_Name: Jefe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1824104740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824104739}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 746188741}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1824104741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824104739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6937778ea1a0b6c4e9a69c15635c0dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+  - tiempoSalida: 45
+    cantidad: 4
+    prefab: {fileID: 2248073977301352198, guid: 2aba3bbc490587048a94c466d2cd8b61,
+      type: 3}
+    ruta: {fileID: 1052973574}
+  tiempo_entre_olas: 0
+  PuedeAgregarButton: 0
 --- !u!1001 &1834014406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28615,7 +28683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1946190546}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28630,7 +28698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946190545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -0.5, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29164,7 +29232,7 @@ GameObject:
   - component: {fileID: 2033472849}
   - component: {fileID: 2033472848}
   - component: {fileID: 2033472847}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: torre-sol (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29209,7 +29277,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -29271,7 +29339,7 @@ MonoBehaviour:
   Label: 
   TargetHandleWeaponAbility: {fileID: 0}
   AimOrigin: 0
-  FaceTarget: 0
+  FaceTarget: 1
   AimAtTarget: 1
   OnlyAimWhenInState: 0
 --- !u!114 &2033472850
@@ -29932,7 +30000,7 @@ GameObject:
   - component: {fileID: 2095686993}
   - component: {fileID: 2095686992}
   - component: {fileID: 2095686991}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: torre-fertilizantemagico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29977,7 +30045,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
