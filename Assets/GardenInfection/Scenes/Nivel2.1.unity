@@ -1838,7 +1838,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261433441}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88e67178ee4220d45998a68939692391, type: 3}
   m_Name: 
@@ -4594,7 +4594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654141584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -0.4, y: -0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5463,7 +5463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806185112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -1, y: -0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5620,7 +5620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818771264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.221657, y: -11.579372, z: 0}
+  m_LocalPosition: {x: -30.16, y: -14.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5650,7 +5650,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -6657,7 +6657,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905554872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -0.8, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8347,7 +8347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209117834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.91, y: 19.95, z: 0}
+  m_LocalPosition: {x: -0.6, y: -1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8540,7 +8540,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -11895,7 +11895,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
@@ -28612,7 +28612,7 @@ MonoBehaviour:
   BlockingMovementStates: 
   BlockingConditionStates: 
   BlockingWeaponStates: 
-  InitialWeapon: {fileID: 114277323309942634, guid: 7d9788e82d6befd44bbf3adef8ced523,
+  InitialWeapon: {fileID: 114317679573123918, guid: 41c4b1b5cf3c187459806b6e03ca36ac,
     type: 3}
   CanPickupWeapons: 1
   WeaponUseFeedback: {fileID: 0}
