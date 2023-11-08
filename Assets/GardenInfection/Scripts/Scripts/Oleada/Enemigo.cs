@@ -7,7 +7,7 @@ using UnityEngine;
 [Serializable]
 //Identifica el prefab correspondiente de tipo de enemigo
 public enum TipoEnemigo{
-    Koala, Ninja
+    Koala, Ninja, babosa
 }
 
 [Serializable]

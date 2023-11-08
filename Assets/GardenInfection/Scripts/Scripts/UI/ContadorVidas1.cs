@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using MoreMountains.Tools;
 
-public class ContadorVidas : MonoBehaviour
+public class ContadorVidas1 : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text contador;
@@ -30,3 +30,4 @@ public class ContadorVidas : MonoBehaviour
         }
     }
 }
+

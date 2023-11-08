@@ -5114,7 +5114,7 @@ MonoBehaviour:
   WeaponShouldFlip: 1
   LeftHandHandle: {fileID: 0}
   RightHandHandle: {fileID: 0}
-  ModifyMovementWhileAttacking: 1
+  ModifyMovementWhileAttacking: 0
   MovementMultiplier: 0.5
   PreventAllMovementWhileInUse: 1
   PreventAllAimWhileInUse: 0
