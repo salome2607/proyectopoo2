@@ -16224,7 +16224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 427222508}
   - component: {fileID: 427222507}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: nutritious-fertilizer-tower-in-pixel-art-that-can-be-used-for-sprites-TtG1j86peZ-removebg-preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16323,7 +16323,7 @@ GameObject:
   - component: {fileID: 429123505}
   - component: {fileID: 429123504}
   - component: {fileID: 429123503}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: torre-abononutritivo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17433,7 +17433,7 @@ GameObject:
   - component: {fileID: 528095425}
   - component: {fileID: 528095424}
   - component: {fileID: 528095423}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: torre-abononutritivo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18411,8 +18411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   TargetFrameRate: 300
-  MaximumLives: 0
-  CurrentLives: 0
+  MaximumLives: 20
+  CurrentLives: 20
   GameOverScene: 
   Points: 0
   PauseGameWhenInventoryOpens: 1
@@ -19084,7 +19084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 665584329}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19329,7 +19329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710161410}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21247,7 +21247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 982148691}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21747,7 +21747,7 @@ GameObject:
   - component: {fileID: 1031458157}
   - component: {fileID: 1031458156}
   - component: {fileID: 1031458155}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: torre-espantapajaros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23712,7 +23712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1312204357}
   - component: {fileID: 1312204356}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: magic-fertilizer-tower-in-pixel-art-that-can-be-used-for-sprites-in-a-kfXuaeMQ5q-watermarked-removebg-preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24959,7 +24959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1379141221}
   - component: {fileID: 1379141220}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25216,7 +25216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1420532057}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25648,7 +25648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1483228315}
   - component: {fileID: 1483228316}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25732,7 +25732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485300697}
   - component: {fileID: 1485300698}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: nutritious-fertilizer-tower-in-pixel-art-that-can-be-used-for-sprites-TtG1j86peZ-removebg-preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26746,7 +26746,7 @@ GameObject:
   - component: {fileID: 1651301306}
   - component: {fileID: 1651301305}
   - component: {fileID: 1651301304}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: torre-sol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27389,7 +27389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704897576}
   - component: {fileID: 1704897575}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: scarecrow-tower-in-pixel-art-that-can-be-used-for-sprites-in-a-game-5SzBErJxY--removebg-preview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27828,7 +27828,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1777722953}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28683,7 +28683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1946190546}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29232,7 +29232,7 @@ GameObject:
   - component: {fileID: 2033472849}
   - component: {fileID: 2033472848}
   - component: {fileID: 2033472847}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: torre-sol (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30000,7 +30000,7 @@ GameObject:
   - component: {fileID: 2095686993}
   - component: {fileID: 2095686992}
   - component: {fileID: 2095686991}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: torre-fertilizantemagico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
