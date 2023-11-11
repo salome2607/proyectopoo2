@@ -1838,9 +1838,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261433441}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e67178ee4220d45998a68939692391, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c054fbb3ea1b624c9702fcadfc80660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   contador: {fileID: 2022180545}
@@ -3961,9 +3961,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   TargetFrameRate: 300
-  MaximumLives: 0
-  CurrentLives: 0
-  GameOverScene: 
+  MaximumLives: 20
+  CurrentLives: 20
+  GameOverScene: Perdio
   Points: 0
   PauseGameWhenInventoryOpens: 1
 --- !u!4 &598334959

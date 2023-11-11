@@ -60,46 +60,14 @@ GameObject:
   - component: {fileID: 1409462762}
   - component: {fileID: 1409462763}
   - component: {fileID: 1409462764}
-  - component: {fileID: 799911009197603035}
-  - component: {fileID: 6993570427613373423}
-  - component: {fileID: 6672343762153600356}
-  - component: {fileID: 4778737350984790771}
-  - component: {fileID: 3745039415503634560}
-  - component: {fileID: 888711736967566608}
-  - component: {fileID: 5098798401433382969}
-  - component: {fileID: 865669978645002823}
-  - component: {fileID: 3736186602981637032}
-  - component: {fileID: 6260642430930781276}
-  - component: {fileID: 2177436944578720072}
-  - component: {fileID: 1649237402789535434}
-  - component: {fileID: 8680410995705750942}
-  - component: {fileID: 6146526328148937247}
-  - component: {fileID: 8596912469761283701}
-  - component: {fileID: 8505358106672435534}
-  - component: {fileID: 4766595535785454985}
-  - component: {fileID: 3408080762785515959}
-  - component: {fileID: 8012464942989499939}
-  - component: {fileID: 2227087486221559775}
-  - component: {fileID: 5091417967141962425}
-  - component: {fileID: 4980450856732719045}
-  - component: {fileID: 3221919248871984473}
-  - component: {fileID: 3586170692774265628}
-  - component: {fileID: 996505941206483736}
-  - component: {fileID: 1904851239755170167}
-  - component: {fileID: 1732973187880580340}
-  - component: {fileID: 2687285517026377815}
-  - component: {fileID: 6910085291658078633}
-  - component: {fileID: 7550298603325514368}
-  - component: {fileID: 7215267569104144812}
-  - component: {fileID: 1683631922804513369}
-  - component: {fileID: 1003709648462531753}
-  - component: {fileID: 1306319715770326791}
-  - component: {fileID: 6863394653446044376}
-  - component: {fileID: 6490971156355981250}
-  - component: {fileID: 7813882571996676360}
-  - component: {fileID: 8572623782360628264}
-  - component: {fileID: 7192872498803660830}
-  - component: {fileID: 3102829610997695650}
+  - component: {fileID: -4845912100278115671}
+  - component: {fileID: 6929639200291688546}
+  - component: {fileID: 1099533123455963126}
+  - component: {fileID: 2496997797834236074}
+  - component: {fileID: 7028983026949591922}
+  - component: {fileID: -9085738023083229439}
+  - component: {fileID: 4115857860452744604}
+  - component: {fileID: 7221358082917732505}
   m_Layer: 13
   m_Name: MinimalCharacter2DPlayer2
   m_TagString: Player
@@ -191,10 +159,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.25}
+  m_Offset: {x: -0.12366104, y: 0.6869345}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -205,7 +173,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.5}
+  m_Size: {x: 1.9355316, y: 1.373869}
   m_EdgeRadius: 0
 --- !u!114 &114186989754477336
 MonoBehaviour:
@@ -526,8 +494,8 @@ MonoBehaviour:
   Model: {fileID: 0}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 100
-  MaximumHealth: 100
+  InitialHealth: 30
+  MaximumHealth: 30
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 0}
@@ -635,7 +603,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
   m_Name: 
@@ -666,7 +634,37 @@ MonoBehaviour:
       array:
       - {fileID: 1409462764}
     Transitions:
-      array: []
+      array:
+      - Decision: {fileID: 1099533123455963126}
+        TrueState: Detenerse
+        FalseState: 
+  - StateName: PerderVidas
+    Actions:
+      array:
+      - {fileID: 0}
+    Transitions:
+      array:
+      - Decision: {fileID: 0}
+        TrueState: Respawn
+        FalseState: 
+  - StateName: Respawn
+    Actions:
+      array:
+      - {fileID: 0}
+    Transitions:
+      array:
+      - Decision: {fileID: 0}
+        TrueState: 
+        FalseState: Movimiento
+  - StateName: Detenerse
+    Actions:
+      array:
+      - {fileID: 7221358082917732505}
+    Transitions:
+      array:
+      - Decision: {fileID: 0}
+        TrueState: 
+        FalseState: Movimiento
   TimeInThisState: 0
   Target: {fileID: 0}
   _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
@@ -716,9 +714,9 @@ MonoBehaviour:
   ChangeDirectionOnObstacle: 1
   ObstaclesLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   ObstaclesCheckFrequency: 1
---- !u!114 &799911009197603035
+--- !u!114 &-4845912100278115671
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -727,17 +725,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790328835693532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
+  m_Script: {fileID: 11500000, guid: c9539c9dc77cc1840ab62fce2977ab2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationMode: 0
   Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &6993570427613373423
+  vidasADescontar: 1
+--- !u!114 &6929639200291688546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -746,29 +740,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790328835693532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c9111f9e80baff4b893d2df2291c99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 4778737350984790771}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &6672343762153600356
+  Label: 
+--- !u!114 &1099533123455963126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -777,19 +753,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790328835693532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
+  m_Script: {fileID: 11500000, guid: a39b8d0f53eea1a488b048766d7afbf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &4778737350984790771
+  Label: 
+--- !u!114 &2496997797834236074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -798,17 +766,53 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790328835693532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
+  m_Script: {fileID: 11500000, guid: 922117e1e2222e14c9de3338af534a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+--- !u!114 &7028983026949591922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790328835693532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c39ffec6dea164a99566587a3b9022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationMode: 1
+  Label: 
+--- !u!114 &-9085738023083229439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790328835693532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9111f9e80baff4b893d2df2291c99b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+--- !u!114 &4115857860452744604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790328835693532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9539c9dc77cc1840ab62fce2977ab2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationMode: 0
   Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &3745039415503634560
+  vidasADescontar: 1
+--- !u!114 &7221358082917732505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -817,807 +821,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790328835693532}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
+  m_Script: {fileID: 11500000, guid: 561ab803e1e9aa94ab096724696e5475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitializationMode: 0
   Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &888711736967566608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 865669978645002823}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &5098798401433382969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &865669978645002823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &3736186602981637032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &6260642430930781276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 1649237402789535434}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &2177436944578720072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &1649237402789535434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &8680410995705750942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &6146526328148937247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 8505358106672435534}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &8596912469761283701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &8505358106672435534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &4766595535785454985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &3408080762785515959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 2227087486221559775}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &8012464942989499939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &2227087486221559775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &5091417967141962425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &4980450856732719045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 3586170692774265628}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &3221919248871984473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &3586170692774265628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &996505941206483736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &1904851239755170167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 2687285517026377815}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &1732973187880580340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &2687285517026377815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &6910085291658078633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &7550298603325514368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 1683631922804513369}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &7215267569104144812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &1683631922804513369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &1003709648462531753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &1306319715770326791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 6490971156355981250}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &6863394653446044376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &6490971156355981250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &7813882571996676360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a673056e18ebe048b95497cc830d294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
---- !u!114 &8572623782360628264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec89e4158bf96841b9bc830fc5385ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Owner: {fileID: 0}
-  States:
-  - StateName: Movimiento
-    Actions:
-      array:
-      - {fileID: 3102829610997695650}
-    Transitions:
-      array: []
-  TimeInThisState: 0
-  Target: {fileID: 0}
-  _lastKnownTargetPosition: {x: 0, y: 0, z: 0}
-  BrainActive: 1
-  ResetBrainOnStart: 1
-  ResetBrainOnEnable: 0
-  ActionsFrequency: 0
-  DecisionFrequency: 0
-  RandomizeFrequencies: 0
-  RandomActionFrequency: {x: 0.5, y: 1}
-  RandomDecisionFrequency: {x: 0.5, y: 1}
---- !u!114 &7192872498803660830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e38c1b30926cd264b8cdd9ed9b9dc386, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CycleOption: 2
-  LoopInitialMovementDirection: 0
-  PathElements: []
-  ReferenceMMPath: {fileID: 0}
-  AbsoluteReferencePath: 1
-  MinDistanceToGoal: 0.1
-  LockHandlesOnXAxis: 0
-  LockHandlesOnYAxis: 0
-  LockHandlesOnZAxis: 0
---- !u!114 &3102829610997695650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790328835693532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036bbae7e1b78664cbd7a04a9f169d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitializationMode: 0
-  Label: 
-  ChangeDirectionOnObstacle: 1
-  ObstaclesLayerMask:
-    serializedVersion: 2
-    m_Bits: 256
-  ObstaclesCheckFrequency: 1
 --- !u!1 &1997364199477008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,7 +899,7 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9d03d4c81a43dc143b88b01607c64cc7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9019703c53f9bdb4aa9481abaa8e5683, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

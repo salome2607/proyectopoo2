@@ -55,41 +55,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 61063304230422582, guid: 8336cc0cf1b7b654990d47bf6c37779d,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.9355316
-      objectReference: {fileID: 0}
-    - target: {fileID: 61063304230422582, guid: 8336cc0cf1b7b654990d47bf6c37779d,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.373869
-      objectReference: {fileID: 0}
-    - target: {fileID: 61063304230422582, guid: 8336cc0cf1b7b654990d47bf6c37779d,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.12366104
-      objectReference: {fileID: 0}
-    - target: {fileID: 61063304230422582, guid: 8336cc0cf1b7b654990d47bf6c37779d,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.6869345
-      objectReference: {fileID: 0}
     - target: {fileID: 114871673569860628, guid: 8336cc0cf1b7b654990d47bf6c37779d,
         type: 3}
       propertyPath: InitialHealth
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 114871673569860628, guid: 8336cc0cf1b7b654990d47bf6c37779d,
         type: 3}
       propertyPath: MaximumHealth
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 212503738640729348, guid: 8336cc0cf1b7b654990d47bf6c37779d,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9019703c53f9bdb4aa9481abaa8e5683,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
