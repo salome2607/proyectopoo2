@@ -6028,7 +6028,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 574687008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e67178ee4220d45998a68939692391, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c054fbb3ea1b624c9702fcadfc80660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   contador: {fileID: 485711873}
@@ -6253,8 +6253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   TargetFrameRate: 300
-  MaximumLives: 0
-  CurrentLives: 0
+  MaximumLives: 20
+  CurrentLives: 20
   GameOverScene: 
   Points: 0
   PauseGameWhenInventoryOpens: 1
