@@ -3961,8 +3961,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutomaticallyUnparentOnAwake: 1
   TargetFrameRate: 300
-  MaximumLives: 20
-  CurrentLives: 20
+  MaximumLives: 15
+  CurrentLives: 15
   GameOverScene: Perdio
   Points: 0
   PauseGameWhenInventoryOpens: 1
@@ -4579,7 +4579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 654141585}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5448,7 +5448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 806185113}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5605,7 +5605,7 @@ GameObject:
   - component: {fileID: 818771268}
   - component: {fileID: 818771267}
   - component: {fileID: 818771266}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: torre-casacarashuevos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7786,6 +7786,7 @@ MonoBehaviour:
   - {fileID: 357503830}
   - {fileID: 425580218}
   - {fileID: 1973377497}
+  - {fileID: 964276245}
   contenedor_grupos: {fileID: 1348233200}
 --- !u!4 &1098956922 stripped
 Transform:
@@ -8332,7 +8333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1209117835}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: puntoDeDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8495,7 +8496,7 @@ GameObject:
   - component: {fileID: 1229952127}
   - component: {fileID: 1229952126}
   - component: {fileID: 1229952125}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: torre-ventizca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11850,7 +11851,7 @@ GameObject:
   - component: {fileID: 1331380148}
   - component: {fileID: 1331380147}
   - component: {fileID: 1331380146}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: torre-nectar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

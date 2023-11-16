@@ -58,12 +58,14 @@ PrefabInstance:
     - target: {fileID: 114871673569860628, guid: 8336cc0cf1b7b654990d47bf6c37779d,
         type: 3}
       propertyPath: InitialHealth
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 114871673569860628, guid: 8336cc0cf1b7b654990d47bf6c37779d,
         type: 3}
       propertyPath: MaximumHealth
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9085738023083229439, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
+    - {fileID: 4115857860452744604, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}

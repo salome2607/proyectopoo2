@@ -14,6 +14,8 @@ public class Oleadas : MonoBehaviour
     public GameObject ContenedorGrupos { get => contenedor_grupos; set => contenedor_grupos = value; }
     public int OlaActual { get => ola_actual; set => ola_actual = value; } 
 
+   
+
     public int CantidadOlas()
     {
         return olas.Count;
@@ -49,9 +51,13 @@ public class Oleadas : MonoBehaviour
             Debug.Log("Ola "+ola_actual+"/"+olas.Count);
             MMGameEvent.Trigger("NuevaOla");
         }
-        else{
+        else
+        {
             //Se termina la partida indicar que gano y mostrar ventana fin de nivel
-            Debug.Log("Fin de oleadas");
+            Debug.Log("Fin de oleadas"); 
+            /*yield return new WaitForSeconds(30f);
+            MMSceneLoadingManager.LoadScene("Gano");*/
+            
         }
 
     }

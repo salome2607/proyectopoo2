@@ -152,7 +152,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GardenInfection/Scenes/Creditos.unity
     guid: 81cd4f69a9cd5ec499d404915f981376
-  - enabled: 1
+  - enabled: 0
     path: Assets/GardenInfection/Scenes/Gano.unity
     guid: 0fb6fa516f4607a418037ec407c5c59e
   - enabled: 1
@@ -167,4 +167,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GardenInfection/Scenes/Nivel3.1.unity
     guid: e0570552b6826ae4fbe5c840ca472c24
+  - enabled: 1
+    path: Assets/GardenInfection/Scenes/Gano 1.unity
+    guid: c8ebed0e86bfd4c4f9ac4174a68dc83d
   m_configObjects: {}

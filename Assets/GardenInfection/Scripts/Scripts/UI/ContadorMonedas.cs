@@ -8,27 +8,31 @@ using MoreMountains.Tools;
 public class ContadorMonedas : MonoBehaviour
 {
 
-    [SerializeField]
-    private TMP_Text contador;
+     public int monedasIniciales = 0; // Monedas iniciales
+    public TMP_Text textoContador; // Texto para mostrar el contador en la interfaz de usuario
 
+    private int monedasActuales;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        monedasActuales = monedasIniciales;
+        ActualizarTextoContador();
     }
 
-    // Update is called once per frame
-    void Update()
+    // Método para sumar monedas
+    public void SumarMonedas(int cantidad)
     {
-       /* if(GameManager.Instance.CurrentLives>0)
+        monedasActuales += cantidad;
+        ActualizarTextoContador();
+         Debug.Log("Monedas sumadas en ContadorMonedas: " + cantidad);
+    }
+
+    // Método para actualizar el texto del contador en la interfaz de usuario
+    private void ActualizarTextoContador()
+    {
+        if (textoContador != null)
         {
-            contador.SetText(GameManager.Instance.CurrentLives.ToString());
+            textoContador.text = "Monedas: " + monedasActuales.ToString();
         }
-        else
-        {
-            //MMGameEvent.Trigger("JuegoTerminado");
-            MMSceneLoadingManager.LoadScene("Perdio");
-        }*/
     }
 }

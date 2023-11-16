@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4845912100278115671, guid: 8336cc0cf1b7b654990d47bf6c37779d,
+        type: 3}
+      propertyPath: vidasADescontar
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1790328835693532, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
       propertyPath: m_Name
       value: "ara\xF1a reina"
@@ -279,4 +284,6 @@ PrefabInstance:
     - {fileID: 3745039415503634560, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
     - {fileID: 888711736967566608, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
     - {fileID: 5098798401433382969, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
+    - {fileID: -9085738023083229439, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
+    - {fileID: 4115857860452744604, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8336cc0cf1b7b654990d47bf6c37779d, type: 3}
